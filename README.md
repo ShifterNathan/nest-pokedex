@@ -4,23 +4,37 @@
 
 # Execute on development 
 
-1. Clone the repository?
-2. Execute
+1. Clone the repository
+
+2. Install dependencies:
 ```
 yarn install
 ```
-3. Install Nest CLI
+
+3. Install the Nest CLI globally:
 ```
 npm i -g @nest/cli
 ```
 
-4. Get up the Data Base
+4. Start up the database
 ```
 docker-compose up -d
+```
+
+5. Clone the ```.env.template``` file and rename the copy to ```.env```
+
+6. Fill the enviromental variables defined in ```.env``` 
+
+7. Run the app in dev mode:
+```
+yarn start:dev
+```
+
+8. Rebuild the DB with a seed
+```
+http://localhost:3000/api/seed
 ```
 
 ## Used stack
 * MongoDB
 * Nest
-*
-*
